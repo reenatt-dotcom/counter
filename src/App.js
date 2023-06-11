@@ -28,9 +28,15 @@ class App extends Component {
 
     return (
       <div>
-        <Counter count={count} />
-        <Button onClick={this.incrementCount} label="Increment" />
-        <Button onClick={this.decrementCount} label="Decrement" />
+        <div>
+          <Button onClick={this.incrementCount} label="Increment" />
+        </div>
+        <div>
+          <Counter count={count} />
+        </div>
+        <div>
+          <Button onClick={this.decrementCount} label="Decrement" />
+        </div>
       </div>
     );
   }
